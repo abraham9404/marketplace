@@ -25,7 +25,7 @@ header {
   margin: 10px;
   text-align: center;
   font-size: 1.8em;
-  font-weight: thin;
+  font-weight: bold;
 }
 
 #main-doc header {
@@ -63,6 +63,13 @@ header {
   margin-bottom: 110px;
 }
 
+#main-section top {
+  display: none;
+}
+
+.row1 .column1 img {
+  display: none;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -139,15 +146,60 @@ code {
     margin-left: 0px;
     margin-top: 270px;
   }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .row1 .column1 img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column1 {
+    flex: 20%;
+    max-width: 20%;
+  }
+
+  .column1 img {
+    margin-top: 8px;
+    justify-content: center;
+    width: 10%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   #main-doc {
+    margin-top: 330px;
     margin-left: -10px;
+  }
+
+  #navbar {
+    border-bottom: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  h2 {
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0.384);
   }
 
   code {
     margin-left: -20px;
+    text-align: justify;
     width: 100%;
     padding: 15px;
     padding-left: 10px;
