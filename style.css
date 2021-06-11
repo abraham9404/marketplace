@@ -197,6 +197,10 @@ code {
     background-color: rgba(0, 255, 255, 0.384);
   }
 
+  h4 {
+    text-align: center;
+  }
+
   code {
     margin-left: -20px;
     text-align: justify;
